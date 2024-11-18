@@ -1,0 +1,13 @@
+// Default SCSS content
+$primary-color: #3498db;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $primary-color;
+    color: white;
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
