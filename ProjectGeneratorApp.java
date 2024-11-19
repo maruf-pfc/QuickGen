@@ -23,7 +23,7 @@ public class ProjectGeneratorApp extends JFrame {
 
     private static final String[] TECHNOLOGIES = {"React with JS", "React with TS", "Node.js MVC", "SCSS templates", "HTML/CSS projects"};
     private static final String SERVER_ADDRESS = "localhost";
-    private static final int SERVER_PORT = 6000;
+    private static final int SERVER_PORT = 5000;
 
     public ProjectGeneratorApp() {
         setTitle("Project Generator");

@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class ProjectGeneratorServer {
-    private static final int PORT = 6000;
+    private static final int PORT = 5000;
     private static final String TEMPLATES_DIR = "templates";
 
     public static void main(String[] args) {
