@@ -78,15 +78,35 @@ Before running the application, ensure you have:
 ## Project Structure
 
 ```plaintext
- project-generator/project-generator/
-├── QuickGenClient.java     # Desktop client application
-├── QuickGenServer.java     # Socket server implementation
-└── templates/              # Project templates
-    ├── react-js/
-    ├── react-ts/
-    ├── nodejs-mvc/
-    ├── scss/
-    └── html-css/
+📦QuickGen
+ ┣ 📂quickgen
+ ┃ ┣ 📂opt
+ ┃ ┃ ┗ 📂quickgen
+ ┃ ┃ ┃ ┣ 📜QuickGen.jar
+ ┃ ┃ ┃ ┗ 📜icon.png
+ ┃ ┗ 📂usr
+ ┃ ┃ ┗ 📂share
+ ┃ ┃ ┃ ┗ 📂applications
+ ┣ 📂templates
+ ┃ ┣ 📂html-css
+ ┃ ┣ 📂nodejs-mvc
+ ┃ ┣ 📂react-js
+ ┃ ┣ 📂react-ts
+ ┃ ┗ 📂scss
+ ┣ 📜.gitignore
+ ┣ 📜LICENSE
+ ┣ 📜QuickGen.jar
+ ┣ 📜QuickGenClient.java
+ ┣ 📜QuickGenServer.java
+ ┣ 📜README.md
+ ┣ 📜create-deb.js
+ ┣ 📜create-exe.js
+ ┣ 📜demo.png
+ ┣ 📜executable.md
+ ┣ 📜launch4j-config.xml
+ ┣ 📜manifest.txt
+ ┣ 📜setup-launch4j.js
+ ┗ 📜setup.js
 ```
 
 ## Make Executable File
