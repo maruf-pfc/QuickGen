@@ -39,19 +39,19 @@ Before running the application, ensure you have:
 2. Navigate to the project directory:
 
 ```shellscript
- cd project-generatorcd project-generator
+ cd QuickGen
 ```
 
 3. Compile the server:
 
 ```shellscript
- javac ProjectGeneratorServer.javajavac ProjectGeneratorServer.java
+ javac QuickGenServer.java
 ```
 
 1. Compile the client:
 
 ```shellscript
- javac ProjectGeneratorApp.javajavac ProjectGeneratorApp.java
+ javac QuickGenClient.java
 ```
 
 ## Usage
@@ -59,13 +59,13 @@ Before running the application, ensure you have:
 1. Start the server:
 
 ```shellscript
- java ProjectGeneratorServerjava ProjectGeneratorServer
+ java QuickGenServer
 ```
 
 2. Launch the desktop application:
 
 ```shellscript
- java ProjectGeneratorAppjava ProjectGeneratorApp
+ java QuickGenClient
 ```
 
 3. In the application:
@@ -79,9 +79,9 @@ Before running the application, ensure you have:
 
 ```plaintext
  project-generator/project-generator/
-├── ProjectGeneratorApp.java    # Desktop client application
-├── ProjectGeneratorServer.java # Socket server implementation
-└── templates/                  # Project templates
+├── QuickGenClient.java     # Desktop client application
+├── QuickGenServer.java     # Socket server implementation
+└── templates/              # Project templates
     ├── react-js/
     ├── react-ts/
     ├── nodejs-mvc/
@@ -115,7 +115,7 @@ Each technology template includes:
 
 1. Create a new directory in `templates/` for your technology
 2. Include all necessary project files and configurations
-3. Update the technology mapping in `ProjectGeneratorServer.java`
+3. Update the technology mapping in `QuickGenServer.java`
 4. Add template-specific README instructions
 5. Submit a pull request with your changes
 
@@ -133,8 +133,8 @@ The application includes comprehensive error handling for:
 
 To modify the application:
 
-1. Update GUI components in `ProjectGeneratorApp.java`
-2. Modify server logic in `ProjectGeneratorServer.java`
+1. Update GUI components in `QuickGenClient.java`
+2. Modify server logic in `QuickGenServer.java`
 3. Add/update templates in the `templates/` directory
 4. Recompile both client and server components
 
