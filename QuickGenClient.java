@@ -13,7 +13,7 @@ import java.awt.event.*;
 import java.io.*;
 import java.net.*;
 
-public class ProjectGeneratorApp extends JFrame {
+public class QuickGenClient extends JFrame {
     private JComboBox<String> technologyComboBox;
     private JTextField projectNameField;
     private JTextField directoryField;
@@ -25,8 +25,8 @@ public class ProjectGeneratorApp extends JFrame {
     private static final String SERVER_ADDRESS = "localhost";
     private static final int SERVER_PORT = 5000;
 
-    public ProjectGeneratorApp() {
-        setTitle("Project Generator");
+    public QuickGenClient() {
+        setTitle("QuickGen - Project Generator");
         setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -137,6 +137,6 @@ public class ProjectGeneratorApp extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(ProjectGeneratorApp::new);
+        SwingUtilities.invokeLater(QuickGenClient::new);
     }
 }

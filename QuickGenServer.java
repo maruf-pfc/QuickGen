@@ -1,3 +1,12 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author maruf
+ */
 import java.io.*;
 import java.net.*;
 import java.nio.file.*;
@@ -5,7 +14,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 import java.util.concurrent.*;
 
-public class ProjectGeneratorServer {
+public class QuickGenServer {
     private static final int PORT = 5000;
     private static final String TEMPLATES_DIR = "templates";
 
@@ -63,7 +72,6 @@ public class ProjectGeneratorServer {
                 Files.createDirectories(projectDir);
 
                 copyTemplateFiles(templatePath, projectDir);
-                generateReadme(projectDir, technology, projectName);
 
                 return "Project created successfully at: " + projectDir.toString() + "\n" +
                        "Please check the README.md file for instructions on how to run the project.";
@@ -104,18 +112,6 @@ public class ProjectGeneratorServer {
                     return FileVisitResult.CONTINUE;
                 }
             });
-        }
-
-        private void generateReadme(Path projectDir, String technology, String projectName) throws IOException {
-            Path readmePath = projectDir.resolve("README.md");
-            String readmeContent = "# " + projectName + "\n\n" +
-                                   "This project was generated using the Project Generator for " + technology + ".\n\n" +
-                                   "## How to run\n\n" +
-                                   "1. Navigate to the project directory\n" +
-                                   "2. Install dependencies (if applicable)\n" +
-                                   "3. Start the development server\n\n" +
-                                   "For more detailed instructions, please refer to the documentation of " + technology + ".";
-            Files.write(readmePath, readmeContent.getBytes());
         }
     }
 }

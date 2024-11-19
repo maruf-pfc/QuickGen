@@ -2,7 +2,7 @@
 
 A powerful desktop application built with Java Swing that helps developers quickly scaffold new projects across multiple technologies through an intuitive graphical interface and socket-based backend.
 
-![Project Generator Demo](./demo.png)
+![QuickGen Project Generator Demo](./demo.png)
 
 ## Features
 
@@ -89,6 +89,10 @@ Before running the application, ensure you have:
     └── html-css/
 ```
 
+## Make Executable File
+
+- Open this link [Create Executable File](./executable.md)
+
 ## Template Structure
 
 Each technology template includes:
@@ -166,7 +170,3 @@ For support, please:
 - **Your Name** - _Initial work_ - [YourUsername](https://github.com/yourusername)
 
 See also the list of [contributors](https://github.com/yourusername/project-generator/contributors) who participated in this project.
-
-```plaintext
-
-```
